@@ -1,9 +1,10 @@
+import os
 import logging
 import asyncio
 from telegram import Update, InputMediaPhoto, InputMediaVideo
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
-TOKEN = '7646239186:AAG0Eu6ssWtUn563VJnbJ1qlVbe5GZaawx0'
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 SOURCE_CHANNEL_USERNAME = 'rodast_omiddana'
 TARGET_CHANNEL_USERNAME = '@roodast_news'
 
